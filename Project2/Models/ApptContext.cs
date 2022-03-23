@@ -11,21 +11,24 @@ namespace Project2.Models
         }
         public DbSet<Appointment> Appts { get; set; }
 
-        // This isn't working and idk why, but I also haven't looked at it very seriously
+        protected override void OnModelCreating(ModelBuilder mb)
+        {
 
-        //mb.Entity<Appointment>().HasData(
-        //        new Appointment
-        //        {
-        //            ApptId = 1,
-        //            groupName = "Sam's Group",
-        //            groupSize = 10,
-        //            Email = "test@gmail.com",
-        //            Phone = "8013628071",
-         
-        //        }
-            
-        //);
-      
+            mb.Entity<Appointment>().HasData(
+                    new Appointment
+                    {
+                        ApptId = 1,
+                        groupName = "Sam's Group",
+                        groupSize = 10,
+                        Email = "test@gmail.com",
+                        Phone = "8013628071",
+
+                    }
+
+            );
+
+        }
+
     }
 }
 
