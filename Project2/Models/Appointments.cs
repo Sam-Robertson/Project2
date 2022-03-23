@@ -11,7 +11,7 @@ namespace Project2.Models
         [Required]
         public string groupName { get; set; }
         [Required]
-        //[MaxLength(15)] // I think this is right...
+        [Range(1,15, ErrorMessage = "Group size must be between 1-15")]
         public int groupSize { get; set; }
         [Required]
         public string Email { get; set; }
