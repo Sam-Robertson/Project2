@@ -9,7 +9,7 @@ namespace Project2.Models
         public GroupContext(DbContextOptions<GroupContext> options) : base(options)
         {
         }
-        public DbSet<Group> Appts { get; set; }
+        public DbSet<Group> Groups { get; set; }
 
         protected override void OnModelCreating(ModelBuilder mb)
         {

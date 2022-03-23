@@ -52,8 +52,8 @@ namespace Project2.Controllers
         {
             //ViewBag.Category = blahContext.Category.ToList();
 
-            Group myAppt = blahContext.Appts.Single(x => x.ApptId == Apptid);
-            return View("ApptList", myAppt);
+            Group myGroup = blahContext.Groups.Single(x => x.ApptId == Apptid);
+            return View("ApptList", myGroup);
         }
 
         [HttpPost]
@@ -69,11 +69,11 @@ namespace Project2.Controllers
         public IActionResult ApptList()
         {
 
-            var Appts = blahContext.Appts
+            var Groups = blahContext.Groups
                 //.Include(x => x.Category)
                 //.OrderBy(x => x.Title)
                 .ToList();
-            return View(Appts);
+            return View(Groups);
         }
 
         // Delete Methods
@@ -81,7 +81,7 @@ namespace Project2.Controllers
         [HttpGet]
         public IActionResult Delete(int Apptid)
         {
-            var application = blahContext.Appts.Single(x => x.ApptId == Apptid);
+            var application = blahContext.Groups.Single(x => x.ApptId == Apptid);
 
 
             return View(application);
