@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/samrobertson/Documents/GitHub/Project2/Project2/Project2.csproj": {}
+    "/Users/j-bax/Downloads/WINTER2022/ASP/Project2/Project2/Project2.csproj": {}
   },
   "projects": {
-    "/Users/samrobertson/Documents/GitHub/Project2/Project2/Project2.csproj": {
+    "/Users/j-bax/Downloads/WINTER2022/ASP/Project2/Project2/Project2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/samrobertson/Documents/GitHub/Project2/Project2/Project2.csproj",
+        "projectUniqueName": "/Users/j-bax/Downloads/WINTER2022/ASP/Project2/Project2/Project2.csproj",
         "projectName": "Project2",
-        "projectPath": "/Users/samrobertson/Documents/GitHub/Project2/Project2/Project2.csproj",
-        "packagesPath": "/Users/samrobertson/.nuget/packages/",
-        "outputPath": "/Users/samrobertson/Documents/GitHub/Project2/Project2/obj/",
+        "projectPath": "/Users/j-bax/Downloads/WINTER2022/ASP/Project2/Project2/Project2.csproj",
+        "packagesPath": "/Users/j-bax/.nuget/packages/",
+        "outputPath": "/Users/j-bax/Downloads/WINTER2022/ASP/Project2/Project2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/samrobertson/.config/NuGet/NuGet.Config"
+          "/Users/j-bax/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -41,6 +41,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.21, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[3.1.22, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -77,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.406/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.404/RuntimeIdentifierGraph.json"
         }
       }
     }

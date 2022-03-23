@@ -80,7 +80,7 @@
           "lib/netstandard2.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/3.1.21": {
+      "Microsoft.EntityFrameworkCore.Analyzers/3.1.22": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -634,17 +634,17 @@
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/3.1.21": {
-      "sha512": "Ar13pLhMHe7KwTnp/Kd/Q8avcbXYelIayn+wrGKiLZ1dxK8LMUCg7DpMfG1648qk4L55fGLwFaNxoo48x0xX1g==",
+    "Microsoft.EntityFrameworkCore.Analyzers/3.1.22": {
+      "sha512": "ZoCxLj5Z91lxfsq6ScHORnFq5UOz9J8j3mgrqW64XnCW85nDr1L74EXq50/3Y1huxnpWrZy6NrLNzsnvkqNRmQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/3.1.21",
+      "path": "microsoft.entityframeworkcore.analyzers/3.1.22",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.3.1.21.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.3.1.22.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
@@ -1188,25 +1188,26 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.EntityFrameworkCore >= 3.1.21",
+      "Microsoft.EntityFrameworkCore.Analyzers >= 3.1.22",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.21",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.21",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.21"
     ]
   },
   "packageFolders": {
-    "/Users/samrobertson/.nuget/packages/": {}
+    "/Users/j-bax/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/samrobertson/Documents/GitHub/Project2/Project2/Project2.csproj",
+      "projectUniqueName": "/Users/j-bax/Downloads/WINTER2022/ASP/Project2/Project2/Project2.csproj",
       "projectName": "Project2",
-      "projectPath": "/Users/samrobertson/Documents/GitHub/Project2/Project2/Project2.csproj",
-      "packagesPath": "/Users/samrobertson/.nuget/packages/",
-      "outputPath": "/Users/samrobertson/Documents/GitHub/Project2/Project2/obj/",
+      "projectPath": "/Users/j-bax/Downloads/WINTER2022/ASP/Project2/Project2/Project2.csproj",
+      "packagesPath": "/Users/j-bax/.nuget/packages/",
+      "outputPath": "/Users/j-bax/Downloads/WINTER2022/ASP/Project2/Project2/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/samrobertson/.config/NuGet/NuGet.Config"
+        "/Users/j-bax/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -1233,6 +1234,10 @@
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[3.1.21, )"
+          },
+          "Microsoft.EntityFrameworkCore.Analyzers": {
+            "target": "Package",
+            "version": "[3.1.22, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -1269,7 +1274,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.406/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.404/RuntimeIdentifierGraph.json"
       }
     }
   }

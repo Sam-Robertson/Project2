@@ -23,4 +23,3 @@ namespace Project2.Models
 
     }
 }
-
