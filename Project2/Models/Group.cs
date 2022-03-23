@@ -3,20 +3,24 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Project2.Models
 {
-    public class Appointment
+    public class Group
     {
         [Key]
         [Required]
-        public long ApptId { get; set; }
+        public long GroupId { get; set; }
         [Required]
-        public string groupName { get; set; }
+        public string GroupName { get; set; }
         [Required]
         [Range(1,15, ErrorMessage = "Group size must be between 1-15")]
-        public int groupSize { get; set; }
+        public int GroupSize { get; set; }
         [Required]
         public string Email { get; set; }
- 
+        [Required]
         public string Phone { get; set; }
+
+        public Appt Appt { get; set; }
+        public int ApptId { get; set; }
+
     }
 }
 

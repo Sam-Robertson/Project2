@@ -28,7 +28,7 @@ namespace Project2
             services.AddControllersWithViews();
 
 
-            services.AddDbContext<ApptContext>(options =>
+            services.AddDbContext<GroupContext>(options =>
                 {
                     options.UseSqlite(Configuration.GetConnectionString("BlahConnection"));
                 });

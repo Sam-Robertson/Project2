@@ -4,7 +4,7 @@
 
 
 
-@model List<Appointment>
+@model List<Group>
 
 
 <table class="table table-bordered table-striped">
@@ -22,8 +22,8 @@
         @foreach (var x in Model)
         {
             <tr>
-                <td>@x.groupName</td>
-                <td>@x.groupSize</td>
+                <td>@x.GroupName</td>
+                <td>@x.GroupSize</td>
                 <td>@x.Email</td>
                 <td>@x.Phone</td>
 
