@@ -3,7 +3,7 @@
     ViewData["Title"] = "Add Appointment";
 }
 
-@model Project2.Models.Appointment
+@model Project2.Models.Group
 
 
     <h1>Add an Appointment</h1>
@@ -14,11 +14,11 @@
             <div asp-validation-summary="All"></div>
 
 
-            <label asp-for="groupName">Group Name:</label>
-            <input asp-for="groupName" /><br />
+            <label asp-for="GroupName">Group Name:</label>
+            <input asp-for="GroupName" /><br />
 
-            <label asp-for="groupSize">Group Size:</label>
-            <input asp-for="groupSize" /><br />
+            <label asp-for="GroupSize">Group Size:</label>
+            <input asp-for="GroupSize" /><br />
 
             <label asp-for="Email">Email:</label>
             <input asp-for="Email"/><br />

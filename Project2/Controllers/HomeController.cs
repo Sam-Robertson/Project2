@@ -13,9 +13,9 @@ namespace Project2.Controllers
     public class HomeController : Controller
     {
 
-        private ApptContext blahContext { get; set; }
+        private GroupContext blahContext { get; set; }
 
-        public HomeController(ApptContext someName)
+        public HomeController(GroupContext someName)
         {
 
             blahContext = someName;
@@ -37,7 +37,7 @@ namespace Project2.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddAppt(Appointment ar)
+        public IActionResult AddAppt(Group ar)
         {
             blahContext.Add(ar);
             blahContext.SaveChanges();
@@ -52,12 +52,12 @@ namespace Project2.Controllers
         {
             //ViewBag.Category = blahContext.Category.ToList();
 
-            Appointment myAppt = blahContext.Appts.Single(x => x.ApptId == Apptid);
-            return View("ApptList", myAppt);
+            Group myGroup = blahContext.Groups.Single(x => x.ApptId == Apptid);
+            return View("ApptList", myGroup);
         }
 
         [HttpPost]
-        public IActionResult Edit(Appointment test)
+        public IActionResult Edit(Group test)
         {
             blahContext.Update(test);
             blahContext.SaveChanges();
@@ -69,11 +69,11 @@ namespace Project2.Controllers
         public IActionResult ApptList()
         {
 
-            var Appts = blahContext.Appts
+            var Groups = blahContext.Groups
                 //.Include(x => x.Category)
                 //.OrderBy(x => x.Title)
                 .ToList();
-            return View(Appts);
+            return View(Groups);
         }
 
         // Delete Methods
@@ -81,14 +81,14 @@ namespace Project2.Controllers
         [HttpGet]
         public IActionResult Delete(int Apptid)
         {
-            var application = blahContext.Appts.Single(x => x.ApptId == Apptid);
+            var application = blahContext.Groups.Single(x => x.ApptId == Apptid);
 
 
             return View(application);
         }
 
         [HttpPost]
-        public IActionResult Delete(Appointment ar)
+        public IActionResult Delete(Group ar)
         {
 
             blahContext.Remove(ar);
